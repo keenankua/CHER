@@ -123,8 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   sr.reveal(".di-text", {
-    origin: "right",
-    distance: "100px",
     duration: 750,
     easing: "ease-out",
     viewFactor: 0.5,

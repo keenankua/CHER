@@ -239,7 +239,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  top: 14.25rem;
+  top: 14.5rem;
   padding: 0 2.5rem;
 }
 
@@ -323,7 +323,7 @@
 
 @media (min-width: 480px) {
   .product-carousel .arrows {
-    top: 17.9rem;
+    top: 17.4rem;
   }
   .product-carousel .header-carousel-wrapper .product-carousel-header .carousel-title {
     font-size: 2rem;
@@ -342,7 +342,7 @@
     margin: 0 auto;
   }
   .product-carousel .arrows {
-    top: 18.3rem;
+    top: 17.1rem;
     padding: 0.8rem;
   }
   .product-carousel .header-carousel-wrapper {
@@ -369,7 +369,7 @@
     max-width: 93rem;
   }
   .product-carousel .arrows {
-    top: 19rem;
+    top: 17.4rem;
   }
   .product-carousel .header-carousel-wrapper {
     max-width: 82rem;
@@ -397,7 +397,7 @@
     margin: 0 auto;
   }
   .product-carousel .arrows {
-    top: 22rem;
+    top: 20.6rem;
   }
   .product-carousel .header-carousel-wrapper {
     max-width: 100rem;
@@ -421,7 +421,7 @@
     max-width: 123rem;
   }
   .product-carousel .arrows {
-    top: 24.5rem;
+    top: 23.1rem;
   }
   .product-carousel .header-carousel-wrapper {
     max-width: 110rem;
@@ -727,6 +727,7 @@
 body {
   font-family: "Inter";
   color: #222222;
+  overflow-x: hidden;
 }
 
 html {
