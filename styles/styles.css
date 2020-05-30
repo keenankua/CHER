@@ -727,6 +727,7 @@
 body {
   font-family: "Inter";
   color: #222222;
+  overflow-x: hidden;
 }
 
 html {

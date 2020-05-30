@@ -34,6 +34,7 @@ $fonts: (
 body {
   font-family: map-get($fonts, primary);
   color: map-get($colours, text-primary);
+  overflow-x: hidden;
 }
 
 html {
