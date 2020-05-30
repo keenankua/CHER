@@ -1,0 +1,177 @@
+.design-inspiration {
+  background-color: map-get($colours, background-secondary);
+
+  .content-wrapper {
+    position: relative;
+    padding: 6.4rem 0;
+  }
+
+  .di-images-wrapper {
+    max-width: 45rem;
+    height: 28rem;
+    position: relative;
+    margin: 0 auto;
+
+    .di-images {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .di-img {
+        // Space for .8rem of gap
+        width: calc(50% - 0.4rem);
+        height: 100%;
+      }
+
+      .di-img-1 {
+        background: url(../images/di-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 75% 75%;
+      }
+
+      .di-img-2 {
+        background: url(../images/di-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 65%;
+      }
+    }
+  }
+
+  .di-text {
+    background-color: map-get($colours, accent-translucent);
+    color: map-get($colours, text-highlight);
+    width: 28rem;
+    padding: 4.2rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    .di-text-header {
+      font-size: 2.4rem;
+      font-weight: 700;
+      white-space: pre-line;
+      text-transform: uppercase;
+    }
+
+    .di-text-body {
+      margin-top: 0.6rem;
+      font-size: 1.4rem;
+
+      .instagram-handle {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (min-width: 675px) {
+  .design-inspiration {
+    .di-images-wrapper {
+      max-width: calc(67.5rem - 1.2rem * 2);
+      height: 40rem;
+
+      .di-images {
+        .di-img {
+          width: calc(50% - 0.6rem);
+        }
+      }
+    }
+
+    .di-text {
+      width: 30rem;
+      padding: 4.8rem;
+
+      .di-text-header {
+        font-size: 2.8rem;
+      }
+
+      .di-text-body {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .design-inspiration {
+    .content-wrapper {
+      padding: 7.2rem 0;
+    }
+
+    .di-text {
+      width: 32rem;
+      padding: 5.2rem;
+
+      .di-text-header {
+        font-size: 3.2rem;
+      }
+
+      .di-text-body {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .design-inspiration {
+    .content-wrapper {
+      max-width: 110rem;
+      padding: 8rem 0;
+    }
+
+    .di-images-wrapper {
+      max-width: 84rem;
+      height: 60rem;
+      margin: 0;
+
+      .di-images {
+        .di-img {
+          width: calc(50% - 0.8rem);
+        }
+      }
+    }
+
+    .di-text {
+      background-color: map-get($colours, accent);
+      width: 36.5rem;
+      padding: 5.8rem;
+
+      .di-text-header {
+        font-size: 3.6rem;
+      }
+
+      .di-text-body {
+        font-size: 1.8rem;
+        margin-top: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .design-inspiration {
+    .content-wrapper {
+      max-width: 123rem;
+      padding: 8.8rem 0;
+    }
+
+    .di-images-wrapper {
+      max-width: 94rem;
+      height: 66rem;
+
+      .di-images {
+        .di-img {
+          width: calc(50% - 1rem);
+        }
+      }
+    }
+  }
+}

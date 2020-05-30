@@ -1,0 +1,279 @@
+.product-carousel {
+  .content-wrapper {
+    position: relative;
+  }
+
+  .arrows {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 14.25rem;
+    padding: 0 2.5rem;
+
+    .arrow {
+      width: 35px;
+      height: 35px;
+      border-top: 1px solid map-get($colours, text-tertiary);
+      border-left: 1px solid map-get($colours, text-tertiary);
+      cursor: pointer;
+    }
+
+    .arrow-prev {
+      transform: rotate(-45deg);
+    }
+
+    .arrow-next {
+      transform: rotate(135deg);
+    }
+  }
+
+  .header-carousel-wrapper {
+    .product-carousel-header {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      line-height: 1;
+
+      .carousel-title {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      .carousel-view-all {
+        font-size: 1.4rem;
+        color: map-get($colours, text-tertiary);
+        position: absolute;
+        right: 2.5rem;
+        bottom: 0;
+      }
+    }
+
+    .product-carousel-items {
+      margin-top: 1.2rem;
+
+      .item-wrapper {
+        // item-wrapper used to fix carousel not playing well with set item width
+        margin: 0 2rem;
+
+        .product-carousel-item {
+          width: 20rem;
+
+          .item-img {
+            width: 100%;
+            height: 26.5rem;
+            object-fit: cover;
+            object-position: bottom center;
+            cursor: pointer;
+          }
+
+          .product-info {
+            margin-top: 0.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .info-top {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// In order to fix bugs with the carousel
+.product-carousel * {
+  max-width: none;
+}
+
+@media (min-width: 480px) {
+  .product-carousel {
+    .arrows {
+      top: 17.9rem;
+    }
+
+    .header-carousel-wrapper {
+      .product-carousel-header {
+        .carousel-title {
+          font-size: 2rem;
+        }
+      }
+
+      .product-carousel-items {
+        .item-wrapper {
+          // item-wrapper used to fix carousel not playing well with set item width
+
+          .product-carousel-item {
+            width: 24rem;
+
+            .item-img {
+              height: 32rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .product-carousel {
+    .content-wrapper {
+      max-width: 70rem;
+      margin: 0 auto;
+    }
+
+    .arrows {
+      top: 18.3rem;
+      padding: 0.8rem;
+    }
+
+    .header-carousel-wrapper {
+      max-width: 58rem;
+      margin: 0 auto;
+
+      .product-carousel-header {
+        .carousel-title {
+          font-size: 2.2rem;
+        }
+      }
+
+      .product-carousel-items {
+        margin-top: 1.4rem;
+
+        .item-wrapper {
+          // item-wrapper used to fix carousel not playing well with set item width
+
+          .product-carousel-item {
+            .product-info {
+              display: block;
+
+              .add-to-cart-button {
+                margin-top: 0;
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .product-carousel {
+    .content-wrapper {
+      max-width: 93rem;
+    }
+
+    .arrows {
+      top: 19rem;
+    }
+
+    .header-carousel-wrapper {
+      max-width: 82rem;
+
+      .product-carousel-header {
+        .carousel-title {
+          font-size: 2.4rem;
+        }
+
+        .carousel-view-all {
+          font-size: 1.6rem;
+        }
+      }
+
+      .product-carousel-items {
+        margin-top: 1.6rem;
+
+        .item-wrapper {
+          // item-wrapper used to fix carousel not playing well with set item width
+          margin: 0 2.2rem;
+
+          .product-carousel-item {
+            .product-info {
+              .add-to-cart-button {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-carousel {
+    .content-wrapper {
+      max-width: 110rem;
+      margin: 0 auto;
+    }
+
+    .arrows {
+      top: 22rem;
+    }
+
+    .header-carousel-wrapper {
+      max-width: 100rem;
+
+      .product-carousel-items {
+        margin-top: 1.8rem;
+
+        .item-wrapper {
+          // item-wrapper used to fix carousel not playing well with set item width
+          margin: 0 2.4rem;
+
+          .product-carousel-item {
+            width: 29rem;
+
+            .item-img {
+              height: 38rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .product-carousel {
+    .content-wrapper {
+      max-width: 123rem;
+    }
+
+    .arrows {
+      top: 24.5rem;
+    }
+
+    .header-carousel-wrapper {
+      max-width: 110rem;
+
+      .product-carousel-items {
+        margin-top: 1.8rem;
+
+        .item-wrapper {
+          .product-carousel-item {
+            width: 33rem;
+
+            .item-img {
+              height: 43rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

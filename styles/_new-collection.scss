@@ -1,0 +1,110 @@
+.new-collection {
+  height: 25rem;
+  margin-left: 3.2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4.8rem;
+
+  .new-collection-text {
+    background-color: map-get($colours, background-primary);
+    position: absolute;
+    padding: 1rem 1rem 1rem 0;
+
+    .new-collection-text-header {
+      font-size: 2.4rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .new-collection-text-button {
+      padding: 0.8rem;
+      margin-top: 0.4rem;
+    }
+  }
+
+  .new-collection-img {
+    background: url(../images/spring-2020.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 425px) {
+  .new-collection {
+    height: 30rem;
+
+    .new-collection-text {
+      padding: 1.2rem 1.2rem 1.2rem 0;
+
+      .new-collection-text-header {
+        font-size: 3rem;
+      }
+
+      .new-collection-text-button {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 675px) {
+  .new-collection {
+    height: 40rem;
+
+    .new-collection-text {
+      padding: 1.4rem 1.4rem 1.4rem 0;
+
+      .new-collection-text-header {
+        font-size: 4rem;
+      }
+
+      .new-collection-text-button {
+        font-size: 2rem;
+        margin-top: 0.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .new-collection {
+    height: 50rem;
+    flex-direction: row;
+    margin-top: 6.4rem;
+    margin-left: 9.6rem;
+
+    .new-collection-text {
+      position: static;
+      padding: 0;
+      margin: auto 0;
+
+      .new-collection-text-header {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .new-collection {
+    height: 57.5rem;
+    margin-top: 7.2rem;
+    margin-left: 11.2rem;
+
+    .new-collection-text {
+      .new-collection-text-header {
+        font-size: 4.8rem;
+      }
+
+      .new-collection-text-button {
+        font-size: 2.4rem;
+        margin-top: 0.8rem;
+      }
+    }
+  }
+}

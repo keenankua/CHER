@@ -1,0 +1,145 @@
+#footer {
+  background: map-get($colours, accent);
+  color: map-get($colours, text-highlight);
+  font-size: 1.6rem;
+  padding: 3.2rem 0;
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-category {
+    margin-top: 2.4rem;
+
+    .footer-category-header {
+      font-weight: 700;
+    }
+
+    .footer-category-items {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(300deg)
+        brightness(102%) contrast(101%);
+    }
+
+    .footer-category {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .footer-category-items {
+        align-items: center;
+        margin-top: 1rem;
+        color: map-get($colours, text-highlight-translucent);
+        display: none;
+
+        .footer-category-item:not(:first-child) {
+          margin-top: 0.6rem;
+        }
+      }
+
+      .accordion {
+        cursor: pointer;
+      }
+
+      .accordion-active {
+        display: flex;
+      }
+    }
+  }
+
+  .connect {
+    .connect-header {
+      display: none;
+    }
+
+    .footer-category-items {
+      .footer-category-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-start;
+
+        img {
+          // Make svg white
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(300deg)
+            brightness(102%) contrast(101%);
+          width: 2.4rem;
+        }
+
+        span {
+          margin-left: 0.8rem;
+        }
+      }
+
+      .footer-category-item:not(:first-child) {
+        margin-top: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  #footer {
+    padding: 4.8rem 0;
+
+    .footer-wrapper {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      width: 90%;
+
+      .footer-category {
+        margin-top: 0;
+        align-items: flex-start;
+
+        .footer-category-items {
+          display: flex;
+          align-items: flex-start;
+        }
+
+        .accordion {
+          cursor: auto;
+        }
+      }
+    }
+
+    .connect {
+      margin-top: 4.8rem;
+
+      .connect-header {
+        display: block;
+        text-align: center;
+      }
+
+      .footer-category-items {
+        margin-top: 1rem;
+        flex-direction: row;
+
+        .footer-category-item:not(:first-child) {
+          margin-top: 0;
+          margin-left: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  #footer {
+    .content-wrapper {
+      max-width: 120rem;
+    }
+  }
+}
