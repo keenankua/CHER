@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cssEase: "ease-in",
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: false,
   });
 
   $(".trending-carousel").slick({
