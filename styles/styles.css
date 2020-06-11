@@ -303,7 +303,7 @@
 }
 
 .product-carousel .header-carousel-wrapper .product-carousel-items .item-wrapper .product-carousel-item .product-info {
-  margin-top: 0.2rem;
+  margin-top: 0.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -357,6 +357,7 @@
   }
   .product-carousel .header-carousel-wrapper .product-carousel-items .item-wrapper .product-carousel-item .product-info {
     display: block;
+    margin-top: 0.6rem;
   }
   .product-carousel .header-carousel-wrapper .product-carousel-items .item-wrapper .product-carousel-item .product-info .add-to-cart-button {
     margin-top: 0;

@@ -73,7 +73,7 @@
           }
 
           .product-info {
-            margin-top: 0.2rem;
+            margin-top: 0.4rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -158,6 +158,7 @@
           .product-carousel-item {
             .product-info {
               display: block;
+              margin-top: 0.6rem;
 
               .add-to-cart-button {
                 margin-top: 0;
